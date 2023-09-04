@@ -1,3 +1,20 @@
-h1{
-    color:red;
-}
+* {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  body{
+    background-color: rgb(189, 227, 250);
+  }
+  a{
+    text-decoration-line: none;
+    color:darkslategray;
+  }
+  h1{
+    color:black
+  }
+  #color-properties{
+    color: navy;
+  }
+  #paragraph-properties{
+    color:darkslategray;
+    font-size: larger;
+  }
