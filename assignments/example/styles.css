@@ -1,0 +1,57 @@
+/* Structure */
+#main-header{
+    background-color:azure
+}
+
+
+#main-sidebar{
+    background-color:darkorchid;
+}
+
+
+/* Navigation */
+#main-nav ul{
+    padding-left:0; 
+}
+
+#main-nav li{
+    padding-left:0;
+    list-style-type:none;
+    padding:5px;
+    background-color:blueviolet;
+    border-bottom: 1px solid azure;
+  
+}
+
+#main-nav a{
+    text-decoration:none;
+    color:black;
+}
+
+#main-content{
+    background-color: pink;
+}
+
+
+
+/* Typography */
+#main-header h1{
+    text-align:center;
+}
+
+/* Larger Resolutions */
+@media (min-width:900px){
+    #main-nav ul, 
+    .flex-container{
+        display:flex;
+    }
+    #main-nav li, .col1of2{
+        flex:1;
+    }
+    
+
+    
+}
+
+
+
