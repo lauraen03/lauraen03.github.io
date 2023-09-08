@@ -1,4 +1,4 @@
-/* Reset some default styles */
+
 body{
     font-family:Arial, Helvetica, sans-serif;
     background-color: #c7e8e2;
@@ -8,7 +8,7 @@ body, h1, h2, h3, p {
     padding: 0;
 }
 
-/* Style the header */
+/* Header Styles*/
 header {
     background-color:#c7e8e2;
     display: flex;
@@ -25,14 +25,14 @@ header {
     font-size: large;
 }
 
-/* Style "My Title" */
+/* Title styles*/
 .big-title {
     font-size: 36px;
     text-align: center;
     margin-top: 10px; 
 }
 
-/* Style the assignments section */
+/* Assignments styles */
 #color-properties {
     text-align: center;
     margin-top: 20px;
@@ -42,7 +42,7 @@ h3 {
     font-size: 36px; 
 }
 
-/* Style the container for assignment boxes */
+/* container and box styles */
 .assignments-container {
     display: flex;
     justify-content: space-between; 
@@ -69,7 +69,7 @@ h3 {
     text-align: left;
 }
 
-/* Style the writing section */
+/* paragraph styles */
 #paragraph-properties {
     text-align: center;
     margin-top: 20px;
@@ -79,20 +79,20 @@ p {
     font-size: 18px;
 }
 
-/* Style the assignment box images */
+/* image styles */
 .assignment-box img {
     width: 100%; 
     height: 200px; 
     object-fit: cover; 
 }
 
-/* Add this CSS code to remove the blue color and underline from links */
+/* link styles */
 .assignment-link {
     color: black; /* Set link text color to black */
     text-decoration: none; /* Remove underline */
 }
 
-/* Media query for screens smaller than 768px (typical mobile screens) */
+/* Media query */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
