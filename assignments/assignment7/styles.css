@@ -1,0 +1,160 @@
+h1{
+    background-color:indianred;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    padding:20px;
+    margin:auto;
+
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif
+}
+
+nav a{
+    text-decoration:none;
+    color:hotpink;
+    
+}
+.exercise1-column, .exercise2-column{
+    background-color:rebeccapurple;
+   
+    flex: 1; 
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.exercise-columns {
+    display: flex;
+    justify-content: space-between; 
+    text-align:center;
+}
+.exercise1-content{
+    display:none;
+    background-color:indianred;
+    padding: 20px;
+    text-align: center;
+}
+#exercise1,
+#exercise2 {
+  display: none;
+}
+
+#exercise1 {
+    background-color: #ffcccb; 
+    padding: 20px; 
+    border-radius: 10px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px; 
+    margin: 0 auto; 
+  }
+  
+  
+  .form-section {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  .input-group {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-group label {
+    display: block;
+    width: 120px; 
+    text-align: right; 
+    margin-right: 10px; 
+  }
+  
+
+  .input-group input {
+    flex: 1;
+  }
+  
+  #show-data {
+    margin-top: 10px;
+  }
+
+
+
+#exercise2 {
+    background-color: #ffcccb; 
+    padding: 20px; 
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px; 
+    margin: 0 auto; 
+  }
+  
+
+  .form-section{
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+
+
+.thermometer {
+    margin-top: 20px;
+    width: 100px; 
+    background-color: #ccc;
+    position: relative;
+  }
+  
+ 
+  .fill-thermometer {
+    background-color: red;
+    height: 0;
+    transition: height 0.5s; 
+  }
+  
+.exercise-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.exercise1-column,
+.exercise2-column {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.exercise1-content {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+@media screen and (max-width: 768px) {
+    .exercise-columns {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .exercise1-column,
+    .exercise2-column {
+        width: 100%; 
+        margin: 5px 0; 
+    }
+}
