@@ -42,14 +42,17 @@ header {
 h3 {
     font-size: 36px; 
 }
+.assignment-box {
 
+    flex:30%
+}
 
 .assignments-container {
     
     display: flex; 
   
     flex-wrap: wrap;
-    width: max-content; 
+     
     justify-content: space-between;
 }
 
