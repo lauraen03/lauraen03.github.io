@@ -21,7 +21,12 @@ body {
     height:200px;
     display: flex;
 }
-
+#rainbow-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Add relative positioning */
+}
 #pot-of-gold {
     display: none;
     width: 100px; 

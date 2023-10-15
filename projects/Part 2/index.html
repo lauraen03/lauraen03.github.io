@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Bakery Name</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Your Bakery Name</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <h2>Welcome to Your Bakery Name</h2>
+            <p>Freshly baked goodness just for you</p>
+            <a href="#menu" class="cta-button">View Menu</a>
+        </div>
+    </section>
+
+    <section id="menu">
+        <div class="menu-items">
+            <h2>Our Menu</h2>
+            <div class="menu-item">
+                <img src="bread1.jpg" alt="Bread 1">
+                <h3>Bread 1</h3>
+                <p>Delicious description of bread 1.</p>
+                <span class="price">$5.99</span>
+            </div>
+            <div class="menu-item">
+                <img src="cake1.jpg" alt="Cake 1">
+                <h3>Cake 1</h3>
+                <p>Delicious description of cake 1.</p>
+                <span class="price">$24.99</span>
+            </div>
+            <!-- Add more menu items here -->
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-us">
+            <h2>About Us</h2>
+            <p>We are a family-owned bakery dedicated to providing the tastiest treats made with love and the finest ingredients.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <p>Have a question or want to place an order? Get in touch with us!</p>
+            <form action="contact.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Your Bakery Name. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
