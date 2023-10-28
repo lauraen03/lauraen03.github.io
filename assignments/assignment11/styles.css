@@ -47,9 +47,9 @@ body {
 }
 
 
-.movie-details {
-    flex: 1;
-}
+
+
+  
 
 .movie-title {
     font-size: 20px;
@@ -71,3 +71,33 @@ body {
 .movie-description {
     margin-top: 10px;
 }
+
+.movie-details div {
+    display: flex;
+    align-items: center;
+  }
+  
+  .movie-details div strong {
+    width: 120px;
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 10px;
+    text-align: right;
+  }
+  
+  
+  .movie-details div strong + div {
+    margin-left: 120px; 
+  }
+  
+ 
+  .movie-description {
+    margin-top: 10px;
+  }
+  
+  
+  
+  
+  /* Rest of your existing CSS styles */
+  
+  
