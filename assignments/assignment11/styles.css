@@ -1,19 +1,19 @@
-styles.css
+
 body {
     background-color: rgb(76, 127, 222);
-    font-family: Arial, sans-serif;
+    font-family:'Courier New', Courier, monospace;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    text-align: center; /* Center align text within the body */
+    text-align: center; 
 }
 
 #header {
     color: black;
-    font-size: 24px; /* Adjust the font size as needed */
+    font-size: 24px;
 }
 
 #movies-container {
@@ -30,8 +30,7 @@ body {
     
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
     border: 2px solid black;
-    width: 1000px; /* Adjust the width to your preferred value */
-    height: 180px; /* Adjust the height to your preferred value */
+    width: 1000px; 
 }
 
 
@@ -44,7 +43,7 @@ body {
 }
 
 .movie-image:hover {
-    transform: scale(1.1); /* Apply scale transformation on hover */
+    transform: scale(1.1); 
 }
 
 
@@ -56,7 +55,7 @@ body {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
-    text-align: left; /* Align the title to the left */
+    text-align: left; 
 }
 
 
