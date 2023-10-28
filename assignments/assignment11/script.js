@@ -1,5 +1,5 @@
-script.js
-// Define the JSON data
+
+
 const moviesData = [
     {
       "title": "The Godfather",
@@ -46,14 +46,10 @@ const moviesData = [
         "description":"The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners Jimmy Conway and Tommy DeVito in the Italian-American crime syndicate.",
         "img":"images/goodfellas.jpg"
       }
+    
     ]
-    // Add more movie data here
-  
-  
-  // Function to create a movie container
-// ... Your existing code ...
 
-// Function to create a movie container
+    
 function createMovieContainer(movie) {
     const movieContainer = document.createElement('div');
     movieContainer.classList.add('movie-container');
@@ -99,9 +95,7 @@ function createMovieContainer(movie) {
     return movieContainer;
 }
 
-// ... Your existing code ...
 
-  // Function to populate movies
   function populateMovies() {
       const moviesContainer = document.getElementById('movies-container');
       moviesData.forEach((movie) => {
@@ -110,7 +104,7 @@ function createMovieContainer(movie) {
       });
   }
   
-  // Load the movies when the page is ready
+  
   document.addEventListener('DOMContentLoaded', () => {
-      populateMovies();
+      populateMovies() ;
   });
