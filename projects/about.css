@@ -39,13 +39,13 @@ body, ul, li {
     background-position: center;
     color: black;
     text-align: center;
-    padding: 20px 0; /* Adjust the top padding to reduce the space */
+    padding: 20px 0; 
 }
 
 
 .about-section h2 {
     font-size: 36px;
-    margin-bottom: 40px; /* Adjust the margin to move "About Us" higher */
+    margin-bottom: 40px; 
 }
 
 .about-content {

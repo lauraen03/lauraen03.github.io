@@ -1,0 +1,119 @@
+body, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #f0e4d0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #663300;
+    font-weight: bold;
+    font-family: 'Arial', Helvetica, sans-serif;
+    margin: 0 15px;
+}
+
+.content {
+    padding: 20px;
+    background-color: #FEE1E8;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.footer {
+    background-color: #f0e4d0;
+    padding: 10px;
+}
+
+/* Add specific styles for your order page below */
+.order-section {
+    padding: 20px;
+}
+
+/* Add more styles as needed for your order page elements */
+
+.order-section {
+    background-color: #FEE1E8;
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.order-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+form {
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #663300;
+}
+
+select, input[type="text"], input[type="email"], input[type="number"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type="submit"] {
+    background-color: #ffcc99;
+    color: #663300;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #ffaa66;
+}
+
+.logo img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+}

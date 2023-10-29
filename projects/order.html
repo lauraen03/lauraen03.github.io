@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - Laura's Bakery</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="home.html"><img src="cupcake-logo.jpg" alt="Laura's Bakery Logo"></a>
+            <h1 class="name">Laura's Bakery</h1>
+        </div>
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="products.html">Products</a>
+            <a href="order.html">Order</a>
+            <a href="#review">Reviews</a>
+        </nav>
+    </header>
+    <main class="content">
+        <section class="order-section">
+            <h2>Place Your Order</h2>
+            
+            <form action="submit_order.php" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" name="name" id="name" required>
+                
+                <label for="email">Your Email:</label>
+                <input type="email" name="email" id="email" required>
+                
+                <label for="instructions">Additional Instructions:</label>
+                <textarea name="instructions" id="instructions"></textarea>
+                
+                <label for="product-type">Select a Product:</label>
+                <select name="product-type" id="product-type">
+                    <option value="Bread">Bread</option>
+                    <option value="Cakes">Cakes</option>
+                    <option value="Macarons">Macarons</option>
+                </select>
+                
+                <label for="specific-product">Select Specific Product:</label>
+                <select name="specific-product" id="specific-product">
+                    <!-- You can add options for specific products based on the product-type selected -->
+                </select>
+                
+                <label for="quantity">Quantity:</label>
+                <input type="number" name="quantity" id="quantity" min="1" value="1">
+                
+                <input type="button" value="Add to Order" id="add-to-order-button">
+                
+                <div id="order-details">
+                    <h3>Your Order</h3>
+                    <ul id="order-list">
+                        <!-- The selected items will be displayed here -->
+                    </ul>
+                </div>
+                
+                <input type="submit" value="Submit Order">
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <!-- Footer content goes here -->
+    </footer>
+    <script src="order.js"></script>
+</body>
+</html>
