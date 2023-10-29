@@ -5,14 +5,14 @@ document.addEventListener("DOMContentLoaded", function() {
     const addToOrderButton = document.getElementById("add-to-order-button");
     const orderList = document.getElementById("order-list");
 
-    // Product data based on types
+  
     const products = {
         Bread: ["Italian Bread", "French Bread", "Pumpernickel Bread"],
         Cakes: ["White Cake", "Yellow Cake", "Chocolate Cake", "Red Velvet Cake"],
         Macarons: ["Vanilla Macaron", "Chocolate Macaron", "Lemon Macaron", "Raspberry Macaron", "Pistachio Macaron"]
     };
 
-    // Function to populate the specific-product select
+    
     function populateSpecificProducts() {
         specificProductSelect.innerHTML = '';
         const productType = productTypeSelect.value;
@@ -38,6 +38,6 @@ document.addEventListener("DOMContentLoaded", function() {
         orderList.appendChild(listItem);
     });
 
-    // Initial population of specific products
+
     populateSpecificProducts();
 });

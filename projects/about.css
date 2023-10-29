@@ -66,3 +66,96 @@ body, ul, li {
     height:300px;
     width:500px;
 }
+.hours-section {
+    background-color: #FEE1E8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px; /* Add some space between the content and this section */
+}
+
+.hours-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #663300;
+}
+
+.hours-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hours-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.hours-section li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+/* ... Your existing styles ... */
+
+/* Hours of Operation Section */
+.hours-section {
+    background-color: #f0e4d0;
+    padding: 10px;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 16px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.hours-section h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.hours-section p {
+    margin: 0;
+    padding: 5px;
+}
+
+/* ... Your existing styles ... */
+
+
+/* Style the specific days and hours as needed */
+.hours-section li strong {
+    color: #FF8800;
+    margin-right: 10px;
+}
+.cta-section {
+    background-color: #FEE1E8;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cta-section h3 {
+    font-size: 24px;
+    color: #663300;
+    margin-bottom: 10px;
+}
+
+.cta-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #FFC8A2;
+    color: #663300;
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #FFA87D;
+}
