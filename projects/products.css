@@ -1,38 +1,38 @@
-/* Reset some default styles */
+
 body, ul, li {
     margin: 0;
     padding: 0;
 }
 
-/* Style the header */
+
 .header {
-    background-color: #f0e4d0; /* Pastel yellow background */
+    background-color: #f0e4d0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
 }
 
-/* Style the logo */
+
 .logo img {
-    max-width: 100px; /* Adjust the maximum width for the logo */
+    max-width: 100px; 
     height: auto;
     border-radius: 50%;
 }
 
-/* Style the navigation bar */
+
 .navbar a {
     text-decoration: none;
-    color: #663300; /* Brown text */
+    color: #663300; 
     font-weight: bold;
     font-family: 'Arial', Helvetica, sans-serif;
     margin: 0 15px;
 }
 
-/* Style the main content */
+
 .content {
     padding: 20px;
-    background-color: #ffffff; /* White content background */
+    background-color: #FEE1E8;
     margin: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -40,21 +40,21 @@ body, ul, li {
 }
 
 .content h2{
-    font-size: 36px;
+    font-size: 42px;
     margin-bottom: 20px;
     color: black; 
 }
 .breads h2 {
     text-align: center;
+   
 }
-/* Style the footer */
+
 .footer {
-    background-color: #f0e4d0; /* Match the header's color */
-    text-align: center;
+    background-color: #f0e4d0; 
     padding: 10px;
 }
 
-/* Style product listings */
+
 .products-section {
     padding: 20px;
 }
@@ -97,6 +97,7 @@ body, ul, li {
 
 .cakes h2 {
     text-align: center;
+    
 }
 .cta-button {
     display: inline-block;
@@ -113,12 +114,26 @@ body, ul, li {
     background-color: #ffaa66;
 }
 
-/* Center the word "macarons" */
+
 .macarons h2 {
     text-align: center;
 }
 .name {
     font-size: 36px;
-    color: #663300; /* Change this color to your desired color */
+    color: #663300; 
     font-family: 'Arial', sans-serif;
 }
+
+h3{
+    font-size:36px;
+}
+
+.product {
+    background-color: white;
+    border: 2px solid #C6DBDA;
+    border-radius: 15px; /* Add more border radius for a rounded look */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow for depth */
+    /* Other styles for product boxes go here */
+}
+

@@ -1,72 +1,68 @@
-/* Reset some default styles */
 body, ul, li {
     margin: 0;
     padding: 0;
 }
 
-/* Style the header */
 .header {
-    background-color: #f0e4d0; /* Pastel yellow background */
+    background-color: #f0e4d0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
 }
 
-/* Style the logo */
 .logo img {
-    max-width: 100px; /* Adjust the maximum width for the logo */
+    max-width: 100px;
     height: auto;
     border-radius: 50%;
 }
 
-/* Style the navigation bar */
 .navbar a {
     text-decoration: none;
-    color: #663300; /* Brown text */
+    color: #663300;
     font-weight: bold;
     font-family: 'Arial', Helvetica, sans-serif;
     margin: 0 15px;
 }
 
-/* Style the main content */
 .content {
     padding: 20px;
-    background-color: #ffffff; /* White content background */
+    background-color: #ffffff;
     margin: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Style the "About Us" section and add the background image */
 .about-section {
-    background-image: url('about-background.jpg'); /* Replace with your image file name */
+    background-color: #FEE1E8;
     background-size: cover;
     background-position: center;
-    color: #fff; /* Adjust text color for visibility */
+    color: black;
     text-align: center;
-    padding: 100px 0;
+    padding: 20px 0; /* Adjust the top padding to reduce the space */
 }
+
 
 .about-section h2 {
     font-size: 36px;
-    margin-bottom: 20px;
+    margin-bottom: 40px; /* Adjust the margin to move "About Us" higher */
 }
 
-.about-section p {
-    font-size: 18px;
-    margin-bottom: 20px;
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
 }
 
-/* Style the footer */
-.footer {
-    background-color: #f0e4d0; /* Match the header's color */
-    text-align: center;
-    padding: 10px;
-}
-.name {
-    font-size: 36px;
-    color: #663300; /* Change this color to your desired color */
-    font-family: 'Arial', sans-serif;
+.about-text {
+    flex: 1;
+    padding: 20px;
 }
 
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    height:300px;
+    width:500px;
+}

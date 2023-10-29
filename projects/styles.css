@@ -1,61 +1,61 @@
-/* Reset some default styles */
+
 body, ul, li {
     margin: 0;
     padding: 0;
 }
 
 
-/* Style the header */
+
 .header {
-    background-color: #f0e4d0; /* Pastel yellow background */
+    background-color:  #F6EAC2;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
 }
 
-/* Style the logo */
+
 .logo img {
-    max-width: 100px; /* Adjust the maximum width for the logo */
+    max-width: 100px; 
     height: auto;
     border-radius: 50%;
 }
 
-/* Style the navigation bar */
+
 .navbar a {
     text-decoration: none;
-    color: #663300; /* Brown text */
+    color: #663300; 
     font-weight: bold;
     font-family: 'Arial', Helvetica, sans-serif;
     margin: 0 15px;
 }
-/* Style the main content */
+
 .content {
     padding: 40px;
-    background-color: rgb(247, 192, 229);
+    background-color: #FEE1E8 ;
     margin: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     font-family: 'Arial', sans-serif;
-    color:black; /* Dark text color */
+    color:black; 
 }
 
 .content h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: black;; /* Brown heading color */
+    color: black;
 }
 
 .content p {
     font-size: 18px;
     margin-bottom: 20px;
-    line-height: 1.5; /* Improved line spacing for readability */
+    line-height: 1.5; 
 }
 
 .cta-button {
     display: inline-block;
-    background-color: #ffcc99;
+    background-color: #FED7C3;
     color: #663300;
     font-size: 18px;
     padding: 15px 30px;
@@ -65,18 +65,18 @@ body, ul, li {
 }
 
 .cta-button:hover {
-    background-color: #ffaa66; /* Slightly darker orange on hover */
+    background-color: #FFC8A2
 }
 
 
-/* Style the footer */
+
 .footer {
-    background-color: #f0e4d0; /* Match the header's color */
+    background-color: #f0e4d0; 
     text-align: center;
     padding: 10px;
 }
 .name {
     font-size: 36px;
-    color: #663300; /* Change this color to your desired color */
+    color: #663300; 
     font-family: 'Arial', sans-serif;
 }
