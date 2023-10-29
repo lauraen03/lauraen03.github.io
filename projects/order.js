@@ -4,37 +4,15 @@ document.addEventListener("DOMContentLoaded", function() {
     const quantityInput = document.getElementById("quantity");
     const addToOrderButton = document.getElementById("add-to-order-button");
     const orderList = document.getElementById("order-list");
-    const imageContainer = document.getElementById("image-container"); // Add an element with the ID "image-container" where you want to display the image.
 
-    // Define the URL of the hosted JSON file
-    const jsonUrl = "https://example.com/path/to/image.json"; // Replace with your JSON file URL.
+  
+    const products = {
+        Bread: ["Italian Bread", "French Bread", "Pumpernickel Bread"],
+        Cakes: ["White Cake", "Yellow Cake", "Chocolate Cake", "Red Velvet Cake"],
+        Macarons: ["Vanilla Macaron", "Chocolate Macaron", "Lemon Macaron", "Raspberry Macaron", "Pistachio Macaron"]
+    };
 
-    // Async function to load JSON data
-    async function loadImage() {
-        try {
-            const response = await fetch(jsonUrl); // Fetch JSON data from the URL.
-            if (!response.ok) {
-                throw new Error(`HTTP error! Status: ${response.status}`);
-            }
-            const imageData = await response.json();
-            const imagePath = imageData.imagePath;
-
-            // Create an image element
-            const image = document.createElement("img");
-            image.src = imagePath;
-            image.alt = "Your Image Alt Text"; // Replace with appropriate alt text
-            image.className = "your-image-class"; // Add any CSS class for styling
-
-            // Append the image to the image container
-            imageContainer.appendChild(image);
-        } catch (error) {
-            console.error("Error loading image:", error);
-        }
-    }
-
-    // Call the function to load and display the image
-    loadImage();
-
+    
     function populateSpecificProducts() {
         specificProductSelect.innerHTML = '';
         const productType = productTypeSelect.value;
@@ -59,6 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
         listItem.textContent = `${quantity} x ${specificProduct} (${productType})`;
         orderList.appendChild(listItem);
     });
+
 
     populateSpecificProducts();
 });
