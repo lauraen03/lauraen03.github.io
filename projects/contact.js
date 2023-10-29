@@ -1,9 +1,12 @@
 // contact.js
 
+// Replace 'yourusername' and 'yourrepository' with your GitHub username and repository name
+const jsonURL = 'https://lauraen03.github.io/assignments/Github/json/contact.json';
+
 // Function to populate the contact information
 async function populateContactInfo() {
     try {
-        const response = await fetch('contact.json');
+        const response = await fetch(jsonURL);
         const data = await response.json();
 
         const addressElement = document.getElementById('address');
