@@ -159,3 +159,37 @@ body, ul, li {
 .cta-button:hover {
     background-color: #FFA87D;
 }
+
+/* Contact Us Section Styles */
+.contact-section {
+    background-color: #FEE1E8;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.contact-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #663300;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+}
+
+.info-item {
+    margin: 0 20px;
+}
+
+.info-item h3 {
+    font-size: 20px;
+    color: #663300;
+}
+
+.info-item p {
+    font-size: 18px;
+}
+

@@ -21,46 +21,65 @@
         </nav>
     </header>
     <main class="content">
-        <section class="order-section">
-            <h2>Place Your Order</h2>
-            
-            <form action="submit_order.php" method="post">
-                <label for="name">Your Name:</label>
-                <input type="text" name="name" id="name" required>
-                
-                <label for="email">Your Email:</label>
-                <input type="email" name="email" id="email" required>
-                
-                <label for="instructions">Additional Instructions:</label>
-                <textarea name="instructions" id="instructions"></textarea>
-                
-                <label for="product-type">Select a Product:</label>
-                <select name="product-type" id="product-type">
-                    <option value="Bread">Bread</option>
-                    <option value="Cakes">Cakes</option>
-                    <option value="Macarons">Macarons</option>
-                </select>
-                
-                <label for="specific-product">Select Specific Product:</label>
-                <select name="specific-product" id="specific-product">
+        <div class="container">
+            <section class="order-section">
+                <h2>Place Your Order</h2>
+                <form action="submit_order.php" method="post">
+                    <label for="name">Your Name:</label>
+                    <input type="text" name="name" id="name" required>
                     
-                </select>
-                
-                <label for="quantity">Quantity:</label>
-                <input type="number" name="quantity" id="quantity" min="1" value="1">
-                
-                <input type="button" value="Add to Order" id="add-to-order-button">
-                
-                <div id="order-details">
-                    <h3>Your Order</h3>
-                    <ul id="order-list">
-                        <!-- The selected items will be displayed here -->
-                    </ul>
+                    <label for="email">Your Email:</label>
+                    <input type="email" name="email" id="email" required>
+                    
+                    <label for="instructions">Additional Instructions:</label>
+                    <textarea name="instructions" id="instructions"></textarea>
+                    
+                    <label for="product-type">Select a Product:</label>
+                    <select name="product-type" id="product-type">
+                        <option value="Bread">Bread</option>
+                        <option value="Cakes">Cakes</option>
+                        <option value="Macarons">Macarons</option>
+                    </select>
+                    
+                    <label for="specific-product">Select Specific Product:</label>
+                    <select name="specific-product" id="specific-product">
+                        <option value="Chocolate Cake">Chocolate Cake</option>
+                        <option value="Strawberry Macarons">Strawberry Macarons</option>
+                        <option value="Whole Wheat Bread">Whole Wheat Bread</option>
+                    </select>
+                    
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" name="quantity" id="quantity" min="1" value="1">
+                    
+                    <input type="button" value="Add to Order" id="add-to-order-button">
+                    
+                    <div id="order-details">
+                        <h3>Your Order</h3>
+                        <ul id="order-list">
+                            <!-- The selected items will be displayed here -->
+                        </ul>
+                    </div>
+                    
+                    <input type="submit" value="Submit Order">
+                </form>
+            </section>
+            <aside class="customer-quotes">
+                <h2>Customer Quotes</h2>
+                <div class="quote">
+                    <p>"The cakes at Laura's Bakery are to die for!"</p>
+                    <p>- Happy Customer 1</p>
                 </div>
-                
-                <input type="submit" value="Submit Order">
-            </form>
-        </section>
+                <div class="quote">
+                    <p>"Their macarons are absolutely heavenly!"</p>
+                    <p>- Satisfied Customer 2</p>
+                </div>
+                <div class="quote">
+                    <p>"I can't get enough of their bread!"</p>
+                    <p>- Bread Lover</p>
+                </div>
+                <!-- Add more customer quotes as needed -->
+            </aside>
+        </div>
     </main>
     <footer class="footer">
         <!-- Footer content goes here -->

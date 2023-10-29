@@ -80,3 +80,24 @@ body, ul, li {
     color: #663300; 
     font-family: 'Arial', sans-serif;
 }
+
+/* Additional styles for the Hours of Operation section on home.html */
+.hours-section {
+    background-color: #F0E4D0; /* Match the background color from about.css */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hours-section h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #663300;
+}
+
+.hours-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
