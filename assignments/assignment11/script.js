@@ -30,7 +30,7 @@ function createMovieContainer(movie) {
 
   const description = document.createElement('div');
   description.classList.add('movie-description');
-  description.innerHTML = `<div><strong>Description:</strong> ${movie.description}</div>`;
+  description.innerHTML = `<strong>   Description:</strong> ${movie.description}`;
 
   movieDetails.appendChild(title);
   movieDetails.appendChild(director);
