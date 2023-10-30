@@ -1,7 +1,7 @@
 
 const jsonURL = 'https://lauraen03.github.io/assignments/Github/json/contact.json';
 
-// Function to populate the contact information
+
 async function populateContactInfo() {
     try {
         const response = await fetch(jsonURL);
@@ -19,5 +19,5 @@ async function populateContactInfo() {
     }
 }
 
-// Call the populateContactInfo function when the DOM is ready
+
 document.addEventListener('DOMContentLoaded', populateContactInfo);

@@ -81,7 +81,7 @@ body, ul, li {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin-top: 20px; /* Add some space between the content and this section */
+    margin-top: 20px; 
 }
 
 .hours-section h2 {
@@ -104,9 +104,9 @@ body, ul, li {
     font-size: 16px;
     margin-bottom: 10px;
 }
-/* ... Your existing styles ... */
 
-/* Hours of Operation Section */
+
+
 .hours-section {
     background-color: #f0e4d0;
     padding: 10px;
@@ -127,10 +127,10 @@ body, ul, li {
     padding: 5px;
 }
 
-/* ... Your existing styles ... */
 
 
-/* Style the specific days and hours as needed */
+
+
 .hours-section li strong {
     color: #FF8800;
     margin-right: 10px;
@@ -169,7 +169,7 @@ body, ul, li {
     background-color: #FFA87D;
 }
 
-/* Contact Us Section Styles */
+
 .contact-section {
     background-color: #FEE1E8;
     padding: 20px;
@@ -202,9 +202,9 @@ body, ul, li {
     font-size: 18px;
 }
 
-/* ... Your existing CSS rules ... */
 
-/* Additional styles for the About Us section */
+
+
 .about-section {
     background-color: #FEE1E8;
     background-size: cover;
@@ -234,12 +234,10 @@ body, ul, li {
 .about-image img {
     max-width: 100%;
     height: auto;
-    max-height: 300px; /* Adjust the max height as needed */
+    max-height: 300px; 
 }
 
-/* ... Your existing styles ... */
 
-/* Contact Us Section Styles */
 .contact-section {
     background-color: #FEE1E8;
     padding: 20px;

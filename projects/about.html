@@ -53,17 +53,17 @@
         </section>
     </main>
     <footer class="footer">
-        <!-- Footer content goes here -->
+        <!-- Footer content -->
     </footer>
     <script src="contact.js"></script>
 </body>
 
 <script>
-    // Fetch and parse the JSON data
+
     fetch('image.json')
         .then(response => response.json())
         .then(data => {
-            // Update the image source with the data from the JSON file
+            
             const aboutImage = document.querySelector('.about-image img');
             aboutImage.src = data.aboutImage;
         })

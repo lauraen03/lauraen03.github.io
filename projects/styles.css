@@ -77,7 +77,7 @@ body, ul, li {
     font-family: 'Arial', sans-serif;
 }
 
-/* ... Your existing CSS rules ... */
+
 
 .bakery-photo {
     text-align: center;
@@ -86,12 +86,12 @@ body, ul, li {
 
 .bakery-photo img {
     max-width: 100%;
-    border-radius: 10px; /* Add rounded corners to the image */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
 }
-/* ... Your existing CSS rules ... */
 
-/* Additional styles for the Hours of Operation section on home.html */
+
+
 .hours-section {
     background-color: #F0E4D0;
     padding: 20px;
@@ -99,7 +99,7 @@ body, ul, li {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     margin-top: 20px;
-    border: 2px solid #663300; /* Add a border around the section */
+    border: 2px solid #663300; 
 }
 
 .hours-section h3 {
