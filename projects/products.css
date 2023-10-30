@@ -2,11 +2,12 @@
 body, ul, li {
     margin: 0;
     padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 
 .header {
-    background-color: #f0e4d0;
+    background-color: #F6EAC2;
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -17,7 +17,7 @@
             <a href="about.html">About Us</a>
             <a href="products.html">Products</a>
             <a href="order.html">Order</a>
-            <a href="#review">Reviews</a>
+            <a href="review.html">Reviews</a>
         </nav>
     </header>
     <main class="content">
@@ -25,16 +25,15 @@
             <h2>About Us</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Welcome to Laura's Bakery, where our passion for baking meets your love for delicious treats. We've been serving our community for over a decade, and our commitment to quality and flavor is unwavering.</p>
-                    <p>Our dedicated team of bakers and pastry chefs work tirelessly to create a wide variety of sweet and savory delights. From our signature cupcakes to artisanal bread, every product is a labor of love.</p>
-                    <p>We take pride in using only the finest ingredients, ensuring that every bite of our creations is a delightful experience. Laura's Bakery is more than just a place for baked goods; it's a place where traditions, flavors, and memories come to life.</p>
+                    <p>Welcome to Laura's Bakery, where our passion for baking meets your love for delicious treats. We've been serving our community for just over three years, and our commitment to quality and flavor is unwavering.</p>
+                    <p>Our dedicated team of bakers and pastry chefs work tirelessly to create a wide variety of sweet and savory delights. From our signature cupcakes to our authentic French macarons, every product is sure to be delicous!</p>
+                    <p>We take pride in using only the finest ingredients, ensuring that every bite of our creations is a delightful experience.</p>
                 </div>
                 <div class="about-image">
                     <img src="bakery-background.jpg" alt="About Us Image">
                 </div>
             </div>
         </section>
-
         <section id="contact" class="contact-section">
             <h2>Contact Us</h2>
             <div class="contact-info">
@@ -46,7 +45,7 @@
                     <h3>Phone</h3>
                     <p id="phone"></p>
                 </div>
-                <div class ="info-item">
+                <div class="info-item">
                     <h3>Email</h3>
                     <p id="email"></p>
                 </div>
@@ -58,4 +57,17 @@
     </footer>
     <script src="contact.js"></script>
 </body>
+
+<script>
+    // Fetch and parse the JSON data
+    fetch('image.json')
+        .then(response => response.json())
+        .then(data => {
+            // Update the image source with the data from the JSON file
+            const aboutImage = document.querySelector('.about-image img');
+            aboutImage.src = data.aboutImage;
+        })
+        .catch(error => console.error(error));
+</script>
+
 </html>

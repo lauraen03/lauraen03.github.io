@@ -1,6 +1,4 @@
-// contact.js
 
-// Replace 'yourusername' and 'yourrepository' with your GitHub username and repository name
 const jsonURL = 'https://lauraen03.github.io/assignments/Github/json/contact.json';
 
 // Function to populate the contact information

@@ -1,14 +1,20 @@
 body, ul, li {
     margin: 0;
     padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 .header {
-    background-color: #f0e4d0;
+    background-color: #F6EAC2;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+}
+.name {
+    font-size: 36px;
+    color: #663300;
+    font-family: 'Arial', sans-serif;
 }
 
 .logo img {
@@ -118,11 +124,11 @@ input[type="submit"]:hover {
     border-radius: 50%;
 }
 
-/* Existing CSS styles remain the same */
+
 
 .container {
     display: grid;
-    grid-template-columns: 60% 40%; /* Adjust the percentages as needed */
+    grid-template-columns: 60% 40%; 
     gap: 20px;
 }
 
