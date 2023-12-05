@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Laura's Bakery</title>
     <link rel="stylesheet" href="about.css">
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+    <script src="contact.js" defer></script>
 </head>
+
 <body>
     <header class="header">
         <div class="logo">
@@ -36,38 +40,29 @@
         </section>
         <section id="contact" class="contact-section">
             <h2>Contact Us</h2>
-            <div class="contact-info">
-                <div class="info-item">
-                    <h3>Address</h3>
-                    <p id="address"></p>
-                </div>
-                <div class="info-item">
-                    <h3>Phone</h3>
-                    <p id="phone"></p>
-                </div>
-                <div class="info-item">
-                    <h3>Email</h3>
-                    <p id="email"></p>
-                </div>
-            </div>
+            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="apikey" value="803e3487-bf24-4ef9-b1d3-f0df67e6bd87">
+                <section class="section-square flex-container">
+                    <section id="contact-content">
+                        <label for="contact-name">Name</label>
+                        <input type="text" id="contact-name" name="name" required />
+                        <label for="contact-email">Email</label>
+                        <input type="email" id="contact-email" name="email" required />
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" name="message" required></textarea>
+                        <button id="contact-button" type="button" onclick="submitForm()"
+                            class="bigger-button button-style center-bottom">Submit</button>
+                        <p id="formMessages"></p>
+                    </section>
+                </section>
+            </form>
         </section>
+        
+
     </main>
     <footer class="footer">
-        <!-- Footer content -->
+        <!-- Your footer content -->
     </footer>
-    <script src="contact.js"></script>
 </body>
-
-<script>
-
-    fetch('image.json')
-        .then(response => response.json())
-        .then(data => {
-            
-            const aboutImage = document.querySelector('.about-image img');
-            aboutImage.src = data.aboutImage;
-        })
-        .catch(error => console.error(error));
-</script>
 
 </html>
