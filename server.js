@@ -11,7 +11,7 @@ app.use(express.json());
 app.use('/projects', express.static(path.join(__dirname, 'projects')));
 
 mongoose
-  .connect('mongodb://localhost:27017/bakery', {
+  .connect("mongodb+srv://lauraen03:Katielaura12@bakery.l8vztox.mongodb.net/", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
