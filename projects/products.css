@@ -43,7 +43,7 @@ body, ul, li {
 .content h2{
     font-size: 42px;
     margin-bottom: 20px;
-    color: black; 
+    color:#663300;
 }
 .breads h2 {
     text-align: center;
@@ -62,11 +62,13 @@ body, ul, li {
 
 .product-group {
     margin-top: 20px;
+    color:#663300;
 }
 
 .product h3 {
     font-size: 24px;
     margin-bottom: 10px;
+    color:#663300;
     
 }
 

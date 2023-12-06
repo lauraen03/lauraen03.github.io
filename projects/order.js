@@ -4,15 +4,14 @@ document.addEventListener("DOMContentLoaded", function() {
     const quantityInput = document.getElementById("quantity");
     const addToOrderButton = document.getElementById("add-to-order-button");
     const orderList = document.getElementById("order-list");
+    const orderForm = document.getElementById("orderForm");
 
-  
     const products = {
         Bread: ["Italian Bread", "French Bread", "Pumpernickel Bread"],
         Cakes: ["White Cake", "Yellow Cake", "Chocolate Cake", "Red Velvet Cake"],
         Macarons: ["Vanilla Macaron", "Chocolate Macaron", "Lemon Macaron", "Raspberry Macaron", "Pistachio Macaron"]
     };
 
-    
     function populateSpecificProducts() {
         specificProductSelect.innerHTML = '';
         const productType = productTypeSelect.value;
@@ -38,6 +37,28 @@ document.addEventListener("DOMContentLoaded", function() {
         orderList.appendChild(listItem);
     });
 
+    orderForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const formData = new FormData(orderForm);
+
+        fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData,
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log("Order submitted successfully", data);
+            const messages = document.getElementById('formMessages');
+            messages.innerHTML = 'Order submitted successfully!';
+            orderForm.reset();
+        })
+        .catch(error => {
+            console.error("Error submitting order", error);
+            const messages = document.getElementById('formMessages');
+            messages.innerHTML = 'An unexpected error occurred. Please try again later.';
+        });
+    });
 
     populateSpecificProducts();
 });

@@ -29,7 +29,7 @@
                 <h2>Customer Reviews</h2>
                 <div class="review-form">
                     <h3>Leave a Review</h3>
-                    <form id="reviewForm">
+                    <form id="reviewForm" class="edit-mode">
                         <div class="form-group">
                             <label for="name">Name:</label>
                             <input type="text" id="name" name="name" required>
@@ -50,11 +50,12 @@
                         </div>
                         <!-- Add this input field inside your form -->
                         <input type="hidden" id="reviewId" name="reviewId">
-                        <button type="submit">Submit Review</button>
+                        <!-- Update the button label to indicate add or edit -->
+                        <button type="submit">Add Review</button>
                     </form>
                 </div>
                 <div class="customer-reviews">
-
+                    <!-- Existing customer reviews content -->
                 </div>
             </div>
             <div class="image-section">
@@ -67,8 +68,6 @@
     </footer>
     <script src="script.js"></script>
     <script src="review.js"></script>
-    <link rel="stylesheet" href="/projects/styles.css">
-    <script src="/projects/script.js"></script>
 </body>
 
 </html>

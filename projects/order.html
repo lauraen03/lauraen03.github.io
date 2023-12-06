@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order - Laura's Bakery</title>
     <link rel="stylesheet" href="order.css">
+    <script src="order.js" defer></script>
 </head>
+
 <body>
     <header class="header">
         <div class="logo">
@@ -24,11 +27,13 @@
         <div class="container">
             <section class="order-section">
                 <h2>Place Your Order</h2>
-                <form action="submit_order.php" method="post">
+                <form id="orderForm" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="apikey" value="803e3487-bf24-4ef9-b1d3-f0df67e6bd87">
+                    
                     <label for="name">Your Name:</label>
                     <input type="text" name="name" id="name" required>
                     
-                    <label for ="email">Your Email:</label>
+                    <label for="email">Your Email:</label>
                     <input type="email" name="email" id="email" required>
                     
                     <label for="instructions">Additional Instructions:</label>
@@ -62,6 +67,7 @@
                     
                     <input type="submit" value="Submit Order">
                 </form>
+                <p id="formMessages"></p>
             </section>
             <aside class="customer-quotes">
                 <h2>Customer Quotes</h2>
@@ -74,7 +80,7 @@
                     <p>- Customer 2</p>
                 </div>
                 <div class="quote">
-                    <p>"I can't get enough of their italian bread!"</p>
+                    <p>"I can't get enough of their Italian bread!"</p>
                     <p>- Customer 3</p>
                 </div>
                 <!-- Add more customer quotes -->
@@ -87,6 +93,6 @@
     <div id="image-container">
         
     </div>
-    <script src="order.js"></script>
 </body>
+
 </html>
