@@ -95,3 +95,27 @@ button[type="submit"]:hover {
     padding: 10px;
     border-radius: 5px;
 }
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: #333;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar{
+        flex-direction:column;
+    }
+}
