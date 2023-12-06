@@ -2,7 +2,7 @@
   "name": "lauraen03.github.io-2",
   "version": "1.0.0",
   "description": "CSCE 242 Work",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,6 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "mongoose": "^8.0.0"
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "joi": "^17.11.0",
+    "mongoose": "^8.0.2"
   }
 }
