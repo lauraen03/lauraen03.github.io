@@ -312,4 +312,69 @@ body, ul, li {
     .navbar{
         flex-direction:column;
     }
+
+    .content {
+        padding: 20px; 
+    }
+
+    .about-content {
+        flex-direction: column; 
+    }
+
+    .about-text,
+    .about-image {
+        width: 100%; 
+    }
+
+    .about-image img {
+        height: auto;
+        width: 100%; 
+        max-height: none; 
+    }
+
+    .info-item {
+        margin: 20px 0; 
+    }
+
+    .map-container {
+        padding-top: 56.25%; 
+    }
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .contact-section {
+        padding: 10px; 
+    }
+    #contact-content {
+        max-width: 100%;
+        margin: 0 auto; 
+    }
+
+    label {
+        display: block; 
+        margin-bottom: 5px; 
+        text-align: left; 
+    }
+
+    input,
+    textarea {
+        width: 100%; 
+        box-sizing: border-box; 
+        margin-bottom: 10px; 
+    }
+
+    button {
+        width: 100%; 
+    }
+
+    #formMessages {
+        margin-top: 10px; 
+    }
+    
 }
