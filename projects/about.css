@@ -303,6 +303,45 @@ body, ul, li {
     height: 0.25rem;
     background-color: #333;
 }
+.footer {
+    background-color: #f0e4d0;
+    text-align: center;
+    padding: 20px;
+    color: #663300;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact-info,
+.social-media {
+    flex: 1;
+}
+
+.contact-info h3,
+.social-media h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #663300;
+}
 
 @media (max-width: 768px) {
     .hamburger {
