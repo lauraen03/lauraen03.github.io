@@ -1,204 +1,266 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Poppins', sans-serif;
+    box-sizing:border-box;
+}
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
-    background-color: #c7e8e2;
-}
-body, h1, h2, h3, p {
-    margin: 0;
-    padding: 0;
+    background:#080808;
+    color: lightcyan;
 }
 
-header {
-    background-color:#c7e8e2;
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    padding: 20px 0;
+h1{
+    font-size:25px;
+    color:lightcyan;
+}
+p{
+    font-size:20px;
 }
 
-.name {
-    position: absolute;
-    color: black;
-    top: 10px;
-    left: 20px;
-    font-size: large;
+#header{
+    width:100%;
+    height:100vh;
+
+    background-size:cover;
+    background-position:center;
+   
 }
 
-/* Title styles*/
-.big-title {
-    font-size: 36px;
-    text-align: center;
-    margin-top: 10px; 
+.container{
+    padding:10px 10%;
 }
 
+nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+nav ul li{
+display: inline-block;
+list-style:none;
+margin:10px 20px;
+}
 
-#color-properties {
-    text-align: center;
+nav ul li a{
+    color:lightcyan;
+    text-decoration:none;
+    font-size:18px;
+    position:relative;
+}
+nav ul li a::after{
+content: '';
+width:0%;
+height:3px;
+background:lightcyan;
+position:absolute;
+left:0;
+bottom: -6px;
+transition:0.5s;
+}
+
+nav ul li a:hover::after{
+    width:100%;
+}
+
+.header-text{
+    margin-top: 20%;
+    font-size:30px;
+}
+.header-text h2{
+    font-size: 60px;
+    margin-top:20px;
+}
+
+.header-text h2 span{
+    color: lightcyan;
+}
+
+#about{
+    padding:80px 0;
+    color:#ababab;
+
+}
+/* In styles.css */
+
+
+.row{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.about-col-1{
+    flex-basis:35%;
+}
+
+.about-col-1 img{
+    width:100%;
+    border-radius:15px;
+}
+
+.about-col-2{
+    flex-basis:60%;
+}
+.sub-title{
+    font-size:60px;
+    font-weight:600;
+    color:#fff;
+}
+
+.tab-titles{
+    display:flex;
+    margin:20px 0 40px;
+
+}
+
+.tab-links{
+    margin-right:50px;
+    font-size:18px;
+    font-weight:500;
+    cursor:pointer;
+    position:relative;
+}
+
+.tab-links::after{
+    content:'';
+    width:0;
+    height: 3px;
+    background: #ff004f;
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    transition:0.5s;
+}
+.tab-links.active-link::after{
+    width:50%;
+}
+
+.tab-contents ul li{
+    list-style:none;
+    margin:10px 0;
+}
+.tab-contents ul li span{
+    color:#b54769;
+    font-size:14px;
+}
+
+.tab-contents{
+    display:none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+#services{
+    padding:30px 0;
+}
+.services-list{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap:40px;
+    margin-top:50px;
+}
+
+.services-list div{
+    background: #262626;
+    padding:40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius:10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.services-list div i{
+    font-size: 50px;
+    margin-bottom:30px;
+}
+.services-list div h3{
+    font-size:30px;
+    font-weight:500;
+    margin-bottom:15px;
+}
+
+.services-list div a {
+    text-decoration:none;
+    color:#fff;
+    font-size:12px;
     margin-top: 20px;
-   
-   
+    display:inline-block;
+
 }
 
-h3 {
-    font-size: 36px; 
-}
-.assignment-box {
-
-    flex:30%
+.services-list div:hover{
+    background:#ff004f;
+    transform:translateY(-10px);
 }
 
-.assignments-container {
-    
-    display: flex; 
-  
-    flex-wrap: wrap;
-     
-    justify-content: space-between;
+.contact-left{
+    flex-basis:35%;
+
+}
+.contact-right{
+    flex-basis:60%;
 }
 
-
-.assignment-box {
-    flex: 1; 
-    margin: 20px; 
-    padding: 30px;
-    background-color: #a3dad0; 
-    border: 1px solid #f0f0f0; 
-    text-align: center;
-    color: black; 
-    height: 350px;
-    width:350px;
-   
-    
-   
+.contact-left p{
+    margin-top:30px;
 }
-.assignment-box:last-child {
-    margin-right: 0;
+.btn{
+    display:inline-block;
+    background:#ff004f;
+    text-decoration:none;
+    font-size:24px;
+    color:black;
+    padding:14px 20px;
+    border-radius:8px;
+    margin-top:20px;
 }
 
-.assignment-box h2 {
-    font-size: 24px;
-    
+.contact-right form{
+    width:100%;
+}
+form input, form textarea{
+    width:100%;
+    border: 0;
+    outline:none;
+    background:#262626;
+    padding:15px;
+    margin:15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
 }
 
-
-#color-properties p {
-    text-align: left;
+form .btn{
+    padding:14 px 60px;
+    font-size:18px;
+    margin-top:20px;
+    cursor:pointer;
 }
 
-
-#paragraph-properties {
-    text-align: center;
-    margin-top: 20px;
+.copyright{
+    width:100%;
+    text-align:center;
+    padding:25px 0;
+    background:#262626;
+    font-weight:300;
+    margin-top:20px;
 }
-
-p {
-    font-size: 15px;
-}
-
-
-.assignment-box img {
-    width: 100%; 
-    height: 200px; 
-    object-fit: cover; 
-}
-
-
-.assignment-link {
-    color: black; 
-    text-decoration: none; 
-}
-
-.projects-container {
+.header-text {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    align-items: flex-start;
 }
 
-.project-box {
-    flex: 1;
-    margin: 20px;
-    padding: 30px;
-    background-color: #a3dad0;
-    border: 1px solid #f0f0f0;
-    text-align: center;
-    color: black;
-    height: 350px;
-    width: 350px;
+#text-container {
+    /* Adjust as needed */
 }
 
-.project-box h2 {
-    font-size: 24px;
+#myImage {
+    margin-left:175px; /* Adjust as needed */
+    height:350px;
+    width:auto;
+    border-radius:15px;
 }
-
-.project-box img {
-    width: 100%;
-    height: 300px;
-    width:800px;
-    object-fit: cover;
-}
-
-.project-link {
-    color: black;
-    text-decoration: none;
-}
-
-.project-box h3{
-    font-size: 24px;
-}
-
-
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .name {
-        position: static;
-        margin-bottom: 10px;
-    }
-
-    .assignments-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .assignment-box {
-        margin: 20px auto;
-        padding: 30px;
-        background-color: #a3dad0;
-        border: 1px solid #f0f0f0;
-        text-align: center;
-        color: black;
-        width: 80%; 
-        max-width: 350px; 
-        height: auto; 
-    }
-
-    .projects-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .project-box {
-        margin: 20px auto;
-        padding: 30px;
-        background-color: #a3dad0;
-        border: 1px solid #f0f0f0;
-        text-align: center;
-        color: black;
-        width: 80%;
-        max-width: 350px;
-        height: auto;
-    }
-}
-
-
-
-
-
-
